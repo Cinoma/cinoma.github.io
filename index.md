@@ -1,7 +1,7 @@
 ---
 layout: home
 hero:
-  name: Chris Climbs Code
+  name: Chris Inoma
   text: Software Developer & Technical Writer
   tagline: Building elegant solutions to complex problems
   image:
