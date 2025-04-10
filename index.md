@@ -18,7 +18,7 @@ hero:
 features:
   - icon: 🚀
     title: Full Stack Development
-    details: Experience in building end-to-end web applications using modern technologies
+    details: Experience in building end-to-end web and mobile applications using modern technologies
   - icon: 💡
     title: Problem Solving
     details: Passionate about finding efficient solutions to complex technical challenges

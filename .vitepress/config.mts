@@ -17,6 +17,7 @@ export default defineConfig({
           text: 'Projects',
           items: [
             { text: 'Featured Projects', link: '/projects/' },
+            { text: 'GitHub Activity', link: '/projects/github' },
             { text: 'Web Development', link: '/projects/web' },
             { text: 'Open Source', link: '/projects/open-source' }
           ]
@@ -41,4 +42,6 @@ export default defineConfig({
   },
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
 })
+
+
 
