@@ -15,17 +15,31 @@ async function fetchGitHubData() {
       `https://api.github.com/users/${username}/repos?sort=updated&per_page=6`
     )
     const repoData = await repoResponse.json()
-    repositories.value = repoData.map(repo => ({
-      name: repo.name,
-      description: repo.description,
-      stars: repo.stargazers_count,
-      forks: repo.forks_count,
-      url: repo.html_url,
-      language: repo.language,
-      topics: repo.topics
+    
+    // Process each repository
+    repositories.value = await Promise.all(repoData.map(async repo => {
+      let language = repo.language
+      
+      // If no primary language is set, fetch languages
+      if (!language && repo.languages_url) {
+        const languagesResponse = await fetch(repo.languages_url)
+        const languages = await languagesResponse.json()
+        // Use the first language from the languages object
+        language = Object.keys(languages)[0] || null
+      }
+
+      return {
+        name: repo.name,
+        description: repo.description,
+        stars: repo.stargazers_count,
+        forks: repo.forks_count,
+        url: repo.html_url,
+        language: language,
+        topics: repo.topics
+      }
     }))
 
-    // Fetch contribution data (last year)
+    // Fetch contribution data
     const contributionResponse = await fetch(
       `https://github-contributions-api.jogruber.de/v4/${username}`
     )
@@ -34,6 +48,7 @@ async function fetchGitHubData() {
 
     loading.value = false
   } catch (e) {
+    console.error('Error:', e)
     error.value = 'Failed to load GitHub data'
     loading.value = false
   }
@@ -214,4 +229,3 @@ onMounted(() => {
 .python { background: #306998; }
 /* Add more language colors as needed */
 </style>
-
