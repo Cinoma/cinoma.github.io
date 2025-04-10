@@ -18,6 +18,7 @@ export default defineConfig({
           items: [
             { text: 'Featured Projects', link: '/projects/' },
             { text: 'GitHub Activity', link: '/projects/github' },
+            { text: 'GitLab Activity', link: '/projects/gitlab' },
             { text: 'Web Development', link: '/projects/web' },
             { text: 'Open Source', link: '/projects/open-source' }
           ]
@@ -37,11 +38,9 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/cinoma' },
+      { icon: 'gitlab', link: 'https://gitlab.com/cinoma25' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/chris-inoma' }
     ]
   },
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
 })
-
-
-
