@@ -155,23 +155,6 @@ onMounted(() => {
           </div>
         </div>
       </div>
-
-      <!-- Contribution Graph -->
-      <div class="contribution-graph">
-        <h2>Contribution Activity</h2>
-        <div class="graph">
-          <div v-for="(week, weekIndex) in contributions" 
-               :key="weekIndex" 
-               class="week">
-            <div v-for="(day, dayIndex) in week" 
-                 :key="dayIndex" 
-                 class="day"
-                 :class="'level-' + day.intensity"
-                 :title="`${day.date}: ${day.count} contributions`">
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
