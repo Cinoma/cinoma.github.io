@@ -39,7 +39,11 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/cinoma' },
       { icon: 'gitlab', link: 'https://gitlab.com/cinoma25' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/chris-inoma' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    }
   },
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   ignoreDeadLinks: true
