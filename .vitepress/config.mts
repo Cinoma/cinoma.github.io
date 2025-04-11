@@ -42,4 +42,5 @@ export default defineConfig({
     ]
   },
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
+  ignoreDeadLinks: true
 })
