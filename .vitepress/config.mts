@@ -41,7 +41,7 @@ export default defineConfig({
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/chris-inoma' }
     ]
   },
-  head: [['link', { rel: 'icon', href: '/vite-press-portfolio/favicon.svg' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
   ignoreDeadLinks: true
 })
 
