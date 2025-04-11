@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/vite-press-portfolio/', // Add this line - replace <repo-name> with your repository name
+  base: '/vite-press-portfolio/',
   title: "Chris Climbs Code",
   description: "A collection of Chris Inoma's projects, experiences, and life updates via blog.",
   themeConfig: {
@@ -41,6 +41,6 @@ export default defineConfig({
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/chris-inoma' }
     ]
   },
-  head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
+  head: [['link', { rel: 'icon', href: '/vite-press-portfolio/favicon.svg' }]],
   ignoreDeadLinks: true
 })
