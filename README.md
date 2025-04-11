@@ -58,9 +58,11 @@ npm run docs:preview
 ├── .vitepress/
 │   └── config.mts     # VitePress configuration
 ├── public/            # Static assets
-├── projects/          # Project documentation
-├── blog/             # Blog posts
-└── about.md          # About page
+├── projects/          # Project pages
+├── blog/              # Blog posts
+├── docs/              # Examples and documentation
+├── about.md           # About page
+└── index.md           # Home page
 ```
 
 ## 🚀 Deployment
