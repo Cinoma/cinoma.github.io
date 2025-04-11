@@ -2,7 +2,7 @@
 layout: home
 hero:
   name: Chris Inoma
-  text: Software Developer & Technical Writer
+  text: Software Developer & Rock Climber
   tagline: Building elegant solutions to complex problems
   image:
     src: /profile-image.png
@@ -16,7 +16,7 @@ hero:
       link: /blog/
 
 features:
-  - icon: 🚀
+  - icon: 🛠️
     title: Full Stack Development
     details: Experience in building end-to-end web and mobile applications using modern technologies
   - icon: 💡

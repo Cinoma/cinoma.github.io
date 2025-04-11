@@ -29,7 +29,7 @@ export default defineConfig({
           items: [
             { text: 'Latest Posts', link: '/blog/' },
             { text: 'Technical Guides', link: '/blog/guides' },
-            { text: 'Career Journey', link: '/blog/career' }
+            { text: 'Podcast Episodes', link: '/blog/podcast' }
           ]
         }
       ]
