@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/vite-press-portfolio/', // Add this line - replace <repo-name> with your repository name
   title: "Chris Climbs Code",
   description: "A collection of Chris Inoma's projects, experiences, and life updates via blog.",
   themeConfig: {
@@ -42,4 +43,3 @@ export default defineConfig({
   },
   head: [['link', { rel: 'icon', href: '/favicon.svg' }]],
 })
-
