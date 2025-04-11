@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/vite-press-portfolio/',
+  base: '/',
   title: "Chris Climbs Code",
   description: "A collection of Chris Inoma's projects, experiences, and life updates via blog.",
   themeConfig: {
@@ -44,3 +44,5 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/vite-press-portfolio/favicon.svg' }]],
   ignoreDeadLinks: true
 })
+
+
