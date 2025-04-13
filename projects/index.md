@@ -5,20 +5,20 @@ title: Featured Projects
 
 # Featured Projects
 
-## Project Name 1
+## Project Name: URL Shortener v1
 ::: info Project Details
-- **Tech Stack:** React, Node.js, MongoDB
-- **GitHub:** [Link to repository](https://github.com/username/project1)
-- **Live Demo:** [View demo](https://project1-demo.com)
+- **Tech Stack:**  Vite, React, MaterialUI, Deno, MongoDB
+- **GitHub:** [Link to repository](https://github.com/Cinoma/url-shortener-v1)
+- **Live Demo:** [View demo](https://url-shortener-v1.deno.dev/)
 :::
 
-Description of your project, its features, and your role in development.
+I built this project to showcase my prowess in full-stack development. It offers a responsive design for mobile and web, supports dark mode, operates locally and online, validates URLs, stores and retrieves data, and redirects users to long URLs.
 
-## Project Name 2
+## Project Name: Containerized AI
 ::: info Project Details
-- **Tech Stack:** Vue.js, Express, PostgreSQL
-- **GitHub:** [Link to repository](https://github.com/username/project2)
-- **Live Demo:** [View demo](https://project2-demo.com)
+- **Tech Stack:** Docker, Ollama, Open WebUI
+- **GitHub:** [Link to repository](https://github.com/Cinoma/ollama_open-webui)
+- **Live Demo:** N/A
 :::
 
-Description of your second project...
+I built this project to streamline AI model deployment and interaction, offering a Docker-based setup for Ollama with Open WebUI. It supports GPU acceleration, robust security measures like memory limits and read-only filesystems, and operates locally, making it ideal for securely managing and interacting with the latest large language models like DeepSeek and Qwen. Models can be accessed through Open WebUI's modern UI on port 3000 or directly via port 11434 for API interactions.
