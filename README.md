@@ -8,7 +8,9 @@ A personal portfolio and blog built with VitePress, showcasing projects, technic
 - Project showcase
 - Technical blog
 - GitHub/GitLab activity integration
-- Career journey updates
+- Fully functional Search Bar
+- Automatic Dark Mode
+- Manual Dark Mode toggle
 
 ## 🛠️ Tech Stack
 
