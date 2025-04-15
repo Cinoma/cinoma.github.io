@@ -23,7 +23,7 @@ A personal portfolio and blog built with VitePress, showcasing projects, technic
 ### Prerequisites
 
 - Node.js (version 16 or higher)
-- npm or yarn
+- npm, yarn, or bun
 
 ### Installation
 
