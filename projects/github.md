@@ -3,7 +3,7 @@ title: GitHub Activity
 ---
 
 <script setup>
-import GitHubIntegration from '../.vitepress/theme/components/GitHubIntegration.vue'
+import GitHubIntegration from '../.vitepress/components/GitHubIntegration.vue'
 </script>
 
 # GitHub Activity
