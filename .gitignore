@@ -1,7 +1,8 @@
 # Dependencies
-node_modules/
+node_modules
 .pnp
 .pnp.js
+package-lock.json
 
 # Testing
 coverage/
@@ -19,7 +20,7 @@ out/
 
 # IDE and editors
 .idea/
-.vscode/
+.vscode/*
 *.swp
 *.swo
 .DS_Store
@@ -38,3 +39,10 @@ logs
 .cache/
 .npm/
 .eslintcache
+
+# VitePress
+.vitepress/cache
+.vitepress/dist
+
+# System files
+Thumbs.db
