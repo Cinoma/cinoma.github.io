@@ -18,14 +18,23 @@ I'm a talented and driven Software Engineer with a strong background in both fro
 
 ## Experience
 
-### [All Things JS](https://github.com/All-Things-JS) (2025-Present)
+### Back-end Engineer II @ [Udacity](https://www.udacity.com/) (2025–Present)
+
+- Designing and maintaining production-quality microservices using **GoLang**, **PostgreSQL**, and **GraphQL** for Udacity's rapidly growing platform
+- Managing cloud infrastructure with **AWS** and **Kubernetes**, and implementing infrastructure as code using **Terraform**
+- Participating in on-call rotation for production incident response, maintaining **99.9%** service uptime
+- Optimizing SQL query performance and implementing distributed event streaming with **Kafka**
+- Building and maintaining core internal APIs supporting application services used by students worldwide
+- Configuring and maintaining **CI/CD** pipelines for automated testing and deployment
+
+### Software Engineer @ [All Things JS](https://github.com/All-Things-JS) (2025)
 
 - **Taskboard:** Demonstrated proficiency in **Typescript** and **React** by discovered bugs and implemented fixes to improve
 the user experience.
 - **Taskboard-API:** Demonstrated proficiency in **Typescript** and modern **JavaScript** technologies by building a backend
 that solves the scaling issues presented with using **Firebase**’s non-relational databases.
 
-### Subsplash (2022–2024)
+### Backend Engineer @ [Subsplash](http://subsplash.com/) (2022–2024)
 
 - Identified the deprecation of **Google’s legacy FCM API** and communicated to my team how and when this would affect
 our services. Then, I then documented and implemented a migration plan to successfully update all **5,000+** of our
