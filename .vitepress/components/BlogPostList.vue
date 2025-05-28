@@ -1,54 +1,71 @@
-<script setup>
-import { useData } from 'vitepress'
-import { ref, onMounted } from 'vue'
-
-const { theme } = useData()
-const posts = ref([])
-
-onMounted(async () => {
-  const modules = import.meta.glob('/blog/*.md')
-  const postPromises = Object.keys(modules)
-    .filter(path => !path.endsWith('index.md'))
-    .map(async (path) => {
-      const module = await modules[path]()
-      const frontmatter = module.frontmatter
-      return {
-        title: frontmatter.title,
-        description: frontmatter.description,
-        date: frontmatter.date || new Date(frontmatter.published || '').toLocaleDateString(),
-        url: path.replace(/\.md$/, ''),
-        ...frontmatter
-      }
-    })
-
-  posts.value = (await Promise.all(postPromises))
-    .filter(post => post.title) // Filter out pages without titles
-    .sort((a, b) => new Date(b.date) - new Date(a.date)) // Sort by date
-})
+<script setup lang="ts">
+import { data as posts } from '../blog.data'
 </script>
 
 <template>
   <div class="blog-post-list">
-    <div v-for="post in posts" :key="post.url" class="blog-post">
+    <div v-if="posts.length === 0" class="no-posts">
+      No blog posts found.
+    </div>
+    <div v-else v-for="post in posts" :key="post.url" class="blog-post">
       <h2>
         <a :href="post.url">{{ post.title }}</a>
       </h2>
-      <p class="post-date">Posted on {{ post.date }}</p>
+      <p class="post-date">
+        Posted on {{ new Date(post.date).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        }) }}
+      </p>
       <p class="post-description">{{ post.description }}</p>
     </div>
   </div>
 </template>
 
 <style scoped>
+.blog-post-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.no-posts {
+  text-align: center;
+  padding: 2rem;
+  color: var(--vp-c-text-2);
+}
+
 .blog-post {
   margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--vp-c-divider);
 }
+
+.blog-post:last-child {
+  border-bottom: none;
+}
+
 .post-date {
-  color: #666;
+  color: var(--vp-c-text-2);
   font-size: 0.9em;
   margin: 0.5rem 0;
 }
+
 .post-description {
   margin-top: 0.5rem;
+  color: var(--vp-c-text-1);
+}
+
+.blog-post h2 {
+  margin-bottom: 0.5rem;
+}
+
+.blog-post a {
+  color: var(--vp-c-brand);
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  text-decoration: underline;
 }
 </style>

@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {},
   "devDependencies": {
     "vitepress": "^1.6.3"

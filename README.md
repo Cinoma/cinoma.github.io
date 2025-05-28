@@ -82,4 +82,3 @@ This project is open source and available under the [MIT License](LICENSE).
 - GitHub: [@Cinoma](https://github.com/cinoma)
 - GitLab: [@cinoma25](https://gitlab.com/cinoma25)
 - LinkedIn: [Chris Inoma](https://www.linkedin.com/in/chris-inoma)
-
