@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { formatDate } from '../theme/utils/dateFormatter'
 import { data as posts } from '../blog.data'
 </script>
 
@@ -12,11 +13,7 @@ import { data as posts } from '../blog.data'
         <a :href="post.url">{{ post.title }}</a>
       </h2>
       <p class="post-date">
-        Posted on {{ new Date(post.date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        }) }}
+        Posted on {{ formatDate(post.date) }}
       </p>
       <p class="post-description">{{ post.description }}</p>
     </div>

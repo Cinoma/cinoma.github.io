@@ -1,7 +1,7 @@
 ---
 title: My First Blog Post
 description: Welcome to my new blog where I'll share insights about software development and my journey
-date: 2025-04-20
+date: 2025-04-10
 published: true
 ---
 
