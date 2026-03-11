@@ -21,7 +21,7 @@ I'm a talented and driven Software Engineer with a strong background in both fro
 ### Back-end Engineer II @ [Udacity](https://www.udacity.com/) (June 2025–Present)
 
 - Design and maintain production-quality microservices using **GoLang**, **PostgreSQL**, **CockroachDB**, and **GraphQL** for Udacity's rapidly growing platform.
-- Managing cloud infrastructure with **AWS** and **Kubernetes**, and implementing infrastructure as code using **Terraform**.
+- Manage cloud infrastructure with **AWS** and **Kubernetes**, and implementing infrastructure as code using **Terraform**.
 - Participating in on-call rotation for production incident response, maintaining **99.9%** service uptime.
 - Optimizing SQL query performance and implementing distributed event streaming with **Kafka**.
 - Building and maintaining core internal APIs supporting application services used by students worldwide
