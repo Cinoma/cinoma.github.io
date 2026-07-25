@@ -18,7 +18,7 @@ Hey everyone! I'm excited to share my experience working with Deno and VitePress
 - Developer-friendly tools (Deno FMT and Deno Lint)
 - Clean dependency management
 
-I faced some challenges deploying it live, especially with CORS errors, but I eventually figured it out. While I didn't need to deploy it live for the take-home project with a company I was interviewing with at the time, I wanted to challenge myself and learn more about deployment processes. Eventually I was able to deploy it live and it's working great! Check it out at [url-shortener-v1.deno.dev](https://url-shortener-v1.deno.dev).
+I faced some challenges deploying it live, especially with CORS errors, but I eventually figured it out. While I didn't need to deploy it live for the take-home project with a company I was interviewing with at the time, I wanted to challenge myself and learn more about deployment processes. Eventually I was able to deploy it live and it's working great! Check it out at [short.inoma.deno.net](https://short.inoma.deno.net/).
 
 ## Portfolio Website with VitePress
 
@@ -60,6 +60,7 @@ I'm continuing to improve my portfolio website over time and plan to add feature
 ## Connect With Me
 
 Feel free to follow my journey on the following platforms:
+
 - [Dev.to](https://dev.to/cinoma)
 - [GitHub](https://github.com/cinoma)
 - [Portfolio](https://cinoma.github.io)
